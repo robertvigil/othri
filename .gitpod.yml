@@ -1,0 +1,20 @@
+# https://www.gitpod.io/guides/gitpodify
+image:
+  file: .gitpod.dockerfile
+
+# https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - name: othri # in terminal window 'othri'
+    before: | # run before init/command on every start, has to terminate
+      echo 'before script: installing express.js' 
+      npm install express --no-save
+    init: | # run between before/command, only once on first run (or as part of a prebuilt), has to terminate
+      echo 'init script: currently empty' 
+    command: | # runs after before and init, executes last on every start, doesn't have to terminate, ie. can start a server
+      echo 'command script: starting server' 
+      ./server.js
+
+# https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 3000
+    onOpen: open-browser
