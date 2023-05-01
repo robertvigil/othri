@@ -12,6 +12,7 @@ tasks:
       echo 'init script: currently empty' 
     command: | # runs after before and init, executes last on every start, doesn't have to terminate, ie. can start a server
       echo 'command script: starting server' 
+      chmod 755 server.js
       ./server.js
 
 # https://www.gitpod.io/docs/config-ports/
