@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <title>othri</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <link rel='stylesheet' href='styles/othri.css'>
+</head>
+
+<body>
+
+<div class="app-layout" id="items_list">
+</div>
+
+<input type="text" id="item_desc" class="text-box" placeholder='new item'>
+<input type="datetime-local" class="datetime-hide" id="item_datetime">
+
+<a href="#" id="process_item"><img id="process_item" src="images/tabler-icons.io/plus.svg" title="Create or Update"></a>
+<a href="#" id="delete_item"><img id="delete_item" src="images/tabler-icons.io/trash.svg" title="Delete item"></a>
+
+<dev id="settings_div" class="settings-div-hide">
+  <input type="search" id="desc_search" class="text-box" placeholder='search desc'>
+  <input type="search" id="datetime_search" class="text-box" placeholder='search date/time'>
+  <input type="checkbox" id="display_datetime"><img src="images/tabler-icons.io/calendar-event.svg" title="Display item date/time">&nbsp;
+  <input type="checkbox" id="display_elapsed_vs_now"><img src="images/tabler-icons.io/hourglass.svg" title="Display item elapsed time vs now">&nbsp;
+  <input type="checkbox" id="display_elapsed_vs_prior"><img src="images/tabler-icons.io/clock-stop.svg" title="Display item elapsed time vs previous item">&nbsp;
+  <a href="#" id="delete_all"><img id="delete_all" src="images/tabler-icons.io/bomb.svg" title="Delete all visible items"></a>
+</dev>
+
+<script src="scripts/luxon.min.js"></script>  
+<script src='scripts/othri.js'></script> 
+
+<div class="footer-layout">
+  <div class="footer-left">
+    <a href="#" id="settings"><img id="settings" src="images/tabler-icons.io/settings.svg" title="Settings"></a>&nbsp;
+    <a href='https://github.com/robertvigil/othri' target="_blank"><img src="images/tabler-icons.io/brand-github.svg" title="Help/GitHub"></a>&nbsp;
+    
+  </div>
+  <div class="footer-right"><a href="licenses.html" id="copyright"><img id="copyright" src="images/tabler-icons.io/copyright.svg" title="Licenses"></a></div>
+</div>
+
+<textarea id="debug" class="debug-hide"></textarea>
+
+</body>
+
+</html>
