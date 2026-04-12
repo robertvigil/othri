@@ -1,0 +1,94 @@
+body {
+    margin-top: 6px;
+}
+
+.app-layout {
+    display: grid; 
+    grid-template-columns: 70% 30%;
+    margin-bottom: 6px;
+}
+
+.app-layout-wide {
+    display: grid; 
+    grid-template-columns: 100% 0%;
+    margin-bottom: 6px;
+}
+
+.odd {
+    background-color: white;
+    color: black;
+}
+
+.even {
+    background-color: rgb(245, 245, 245);
+    color: black;
+}
+
+.selected {
+    background-color: CadetBlue;
+    color: white;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.small-italic-blue {
+    font-size: small; font-style: italic; color: CornflowerBlue; 
+}
+
+.small-italic-olive {
+    font-size: small; font-style: italic; color: #808000;
+}
+
+.small-italic-gray {
+    font-size: small; font-style: italic; color: SlateGray;
+}
+
+.text-box {
+    width: 50%;
+}
+
+.datetime-show {
+    display: block;
+}
+
+.datetime-hide {
+    display: none;    
+}
+
+.settings-div-show {
+    background-color: #ebf5fb;
+    display: block;
+}
+
+.settings-div-hide {
+    display: none;
+}
+
+.debug-show {
+    display: block;
+    margin-top: 10px;
+}
+
+.debug-hide {
+    display: none;
+    margin-top: 10px;
+}
+
+.footer-layout {
+    display: grid; 
+    grid-template-columns: 30% 70%;
+}
+
+.footer-left {
+    /* background-color: #696969; */
+    color: #91a9ca;
+}
+
+.footer-right {
+    text-align: right;
+    font-style: italic;
+    /* background-color: #696969; */
+    color: #d1dbe9;
+}
